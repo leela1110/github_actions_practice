@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      text-align: center;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 15px;
+      font-size: 24px;
+    }
+
+    section {
+      margin: 30px auto;
+      max-width: 600px;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🌐 Welcome to My First Web Page
+  </header>
+
+  <section>
+    <h2>Hello, World!</h2>
+    <p>This is a simple HTML page with CSS styling and JavaScript interaction.</p>
+    <button onclick="sayHello()">Click Me</button>
+    <p id="message"></p>
+  </section>
+
+  <script>
+    function sayHello() {
+      document.getElementById("message").innerText = "🚀 You just clicked the button!";
+    }
+  </script>
+</body>
+</html>
